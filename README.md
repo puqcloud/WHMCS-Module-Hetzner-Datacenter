@@ -1,2 +1,55 @@
 # WHMCS-Module-Hetzner-Datacenter
 The Hetzner WHMCS module enables seamless integration with Hetzner Cloud services, enabling automated provisioning, management, and billing of cloud servers directly from the WHMCS platform
+
+# Description
+
+### Hetzner Datacenter module **[WHMCS](https://puqcloud.com/link.php?id=77)**
+
+#####  [Order now](https://puqcloud.com/whmcs-module-hetznerdatacenter.php) | [Download](https://download.puqcloud.com/WHMCS/servers/PUQ_WHMCS-HetznerDatacenter/) | [FAQ](https://faq.puqcloud.com/)
+
+### The module, fully installed and correctly implemented in the system, offers the following functionalities.
+
+Module Functions:
+
+- Auto create and deploy cloud servers
+- Suspend/Unsuspend/Terminate/Change Package/Change Password
+- IP management and bandwidth monitoring
+- Backup and snapshot management
+- SSH key management
+- Custom email notifications
+- Multilingual support (English, Russian, Ukrainian, etc.)
+- Client area functionalities for server management
+
+Available options in the admin panel:
+
+- Create servers
+- Suspend servers
+- Terminate servers
+- Unsuspend servers
+- Change password
+- Change Package
+
+Available options in the client panel:
+
+- Server management (start, stop, reboot)
+- Access to remote console
+- IP management
+- Backup and snapshot management
+- SSH key management
+- View server details and usage statistics
+
+- - - - - -
+
+>WHMCS minimal version: 8 +
+
+[![settingsHetznerDatacenter.png](https://doc.puq.info/uploads/images/gallery/2024-08/scaled-1680-/settingshetznerdatacenter.png)](https://doc.puq.info/uploads/images/gallery/2024-08/settingshetznerdatacenter.png)
+
+[![HomeHetznerDatacenter.png](https://doc.puq.info/uploads/images/gallery/2024-08/scaled-1680-/homehetznerdatacenter.png)](https://doc.puq.info/uploads/images/gallery/2024-08/homehetznerdatacenter.png)
+
+[![ReinstallHetznerDatacenter.png](https://doc.puq.info/uploads/images/gallery/2024-08/scaled-1680-/reinstallhetznerdatacenter.png)](https://doc.puq.info/uploads/images/gallery/2024-08/reinstallhetznerdatacenter.png)
+
+[![SnapshotHetznerDatacenter.png](https://doc.puq.info/uploads/images/gallery/2024-08/scaled-1680-/snapshothetznerdatacenter.png)](https://doc.puq.info/uploads/images/gallery/2024-08/snapshothetznerdatacenter.png)
+
+[![ISOmountHetznerDatacenter.png](https://doc.puq.info/uploads/images/gallery/2024-08/scaled-1680-/isomounthetznerdatacenter.png)](https://doc.puq.info/uploads/images/gallery/2024-08/isomounthetznerdatacenter.png)
+
+[![ChartsHetznerDatacenter.png](https://doc.puq.info/uploads/images/gallery/2024-08/scaled-1680-/chartshetznerdatacenter.png)](https://doc.puq.info/uploads/images/gallery/2024-08/chartshetznerdatacenter.png)
