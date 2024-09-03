@@ -1,0 +1,81 @@
+# Product Information
+
+### Hetzner Datacenter module **[WHMCS](https://puqcloud.com/link.php?id=77)**
+
+#####  [Order now](https://puqcloud.com/whmcs-module-hetznerdatacenter.php) | [Download](https://download.puqcloud.com/WHMCS/servers/PUQ_WHMCS-HetznerDatacenter/) | [FAQ](https://faq.puqcloud.com/)
+
+The "Product Information" section is a comprehensive dashboard that provides administrators with detailed information and control over a specific product or service associated with a user's account. This interface is critical for managing and troubleshooting the product, as well as for making configuration changes.
+
+#### Key Elements:
+
+1. **Order Information:**
+    
+    
+    - **Order #:** Displays the order number and provides a link to view the full order details.
+    - **Product/Service:** Specifies the name of the product or service (e.g., "Hetzner product").
+    - **Server:** Indicates the data center or server instance where the product is hosted.
+2. **User and Server Details:**
+    
+    
+    - **Hostname:** The hostname assigned to the server.
+    - **Dedicated IP:** The public IP address assigned to the server.
+    - **Username:** The username associated with the server's access credentials.
+    - **Password:** The password field shows the encrypted password or a placeholder for the server’s access credentials.
+    - **Status:** The current status of the service (e.g., "Active").
+    - **Assigned IPs:** Lists both IPv4 and IPv6 addresses assigned to the server.
+    - **Nameserver 1 &amp; 2:** The nameservers associated with the product.
+    - **Operating System:** The operating system installed on the server (e.g., "debian-11").
+    - **Backup Option:** Indicates whether the backup feature is enabled or disabled (in this case, "Yes").
+3. **Billing and Subscription Details:**
+    
+    
+    - **Registration Date:** The date when the product or service was registered.
+    - **Quantity:** The quantity of the product or service being managed.
+    - **First Payment Amount:** The initial payment made for the service.
+    - **Recurring Amount:** The recurring cost associated with the service.
+    - **Next Due Date:** The next billing date for the service.
+    - **Termination Date:** If applicable, the date when the service is scheduled to be terminated.
+    - **Billing Cycle:** Indicates the billing cycle for the service (e.g., "Free").
+    - **Payment Method:** The payment method used for the service (e.g., "PayPal").
+    - **Promotion Code:** Displays any promotion code applied to the service.
+4. **Module Commands:**
+    
+    
+    - **API Connection Status:** Displays the status of the API connection, which is necessary for managing the product through automated scripts or external systems. (e.g., "API answer OK").
+    - **Commands:** Provides buttons for creating, suspending, unsuspending, terminating the service, changing the package, and sending a custom welcome email.
+5. **Server Status:**
+    
+    
+    - This section provides real-time status information about the server: 
+        - **Start/Stop:** Indicates whether the server is running or stopped.
+        - **CPU, RAM, and Disk Usage:** Displays the resource usage statistics for the server.
+        - **Datacenter:** Indicates the data center location.
+        - **Public Network IPs:** Shows the public IPv4 and IPv6 addresses assigned to the server.
+        - **Public Network DNS PTR:** Displays the PTR record for reverse DNS.
+6. **Metric Statistics:**
+    
+    
+    - This section shows various usage metrics and their statuses, including: 
+        - **Floating IPv4/IPv6 addresses:** Whether these are enabled and their current usage.
+        - **Bandwidth Usage:** The amount of bandwidth used.
+        - **Snapshot Usage:** The amount of disk space used by snapshots.
+    - A **Refresh Now** button allows updating the metrics to display the latest data.
+7. **Addons and Additional Information:**
+    
+    
+    - **Addons:** Lists any additional services or features associated with the product.
+    - **Hostname (Domain):** Displays the domain associated with the product.
+    - **Password:** Shows the password or its placeholder.
+    - **Subscription ID:** Identifies the subscription tied to the service.
+    - **Override Auto-Suspend:** Allows the administrator to prevent the service from being automatically suspended.
+    - **Auto-Terminate End of Cycle:** Provides an option to terminate the service at the end of its billing cycle.
+    - **Admin Notes:** Allows the administrator to add any notes or information relevant to the management of the service.
+8. **Save or Cancel Changes:**
+    
+    
+    - **Save Changes:** A purple button to save any changes made in this section.
+    - **Cancel Changes:** Allows the administrator to discard any modifications and revert to the previous settings.
+
+<p class="callout info">**IP Address Logging.** The system now includes a mechanism that automatically tracks and logs all IP address changes. Every time a new IP address is added or an existing one is removed, a note is automatically added to the **Admin Notes** section. This note includes the date, time, and details of the IP changes. This feature ensures that all changes are documented for easy reference and auditing.</p>
+
+[![image-1725264544352.png](https://doc.puq.info/uploads/images/gallery/2024-09/scaled-1680-/image-1725264544352.png)](https://doc.puq.info/uploads/images/gallery/2024-09/image-1725264544352.png)

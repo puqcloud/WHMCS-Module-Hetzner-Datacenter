@@ -1,0 +1,37 @@
+# ISO Mount Section Description
+
+### Hetzner Datacenter module **[WHMCS](https://puqcloud.com/link.php?id=77)**
+
+#####  [Order now](https://puqcloud.com/whmcs-module-hetznerdatacenter.php) | [Download](https://download.puqcloud.com/WHMCS/servers/PUQ_WHMCS-HetznerDatacenter/) | [FAQ](https://faq.puqcloud.com/)
+
+The "ISO Mount" section allows users to manage and mount ISO images to their virtual machine. These ISO images are used for installing operating systems, recovery tools, and various software packages on the server. The interface is designed to provide a list of available ISO images, along with the option to view additional details and mount or unmount these images.
+
+#### Key Features and Actions:
+
+1. **Mounted ISO:**
+    
+    
+    - At the top of the section, the currently mounted ISO image is displayed. In this example, **Windows Server 2019 English** is shown as the mounted image.
+    - **Unmount Button:** A red **Unmount** button is provided next to the mounted image, allowing users to unmount the ISO if they wish to detach it from the virtual machine.
+2. **Available ISO Images:**
+    
+    
+    - Below the mounted ISO, a list of all available ISO images is displayed. Each ISO image is presented with the following information: 
+        - **Name:** The name of the ISO image, such as "Windows Server 2016 English (x86)" or "Debian 12.4 (arm64/netinstall)".
+        - **Mount Button:** Each ISO has a yellow **Mount** button next to it, allowing users to mount the selected ISO image to the virtual machine.
+        - **Expandable Details:** Some ISO images have additional details that can be expanded by clicking on the image name. These details include: 
+            - **Id:** A unique identifier for the ISO image.
+            - **Name:** The full name of the ISO file, including its path.
+            - **Type:** The type of the ISO image (e.g., public or private).
+            - **Size:** The size of the ISO image in gigabytes.
+3. **Managing ISO Images:**
+    
+    
+    - Users can click the **Mount** button next to any ISO image to mount it to the virtual machine. Once mounted, the ISO can be used to boot the server or perform installations.
+    - If an ISO image is already mounted, mounting a new ISO will typically require unmounting the current image first.
+4. **Search and Navigation:**
+    
+    
+    - The list of ISO images is scrollable, allowing users to navigate through all available options. This includes a variety of operating systems, recovery tools, and other software distributions.
+
+[![image-1725262568682.png](https://doc.puq.info/uploads/images/gallery/2024-09/scaled-1680-/image-1725262568682.png)](https://doc.puq.info/uploads/images/gallery/2024-09/image-1725262568682.png)

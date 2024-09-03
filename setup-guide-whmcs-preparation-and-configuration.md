@@ -1,0 +1,142 @@
+# Setup guide: WHMCS preparation and configuration
+
+### Hetzner Datacenter module **[WHMCS](https://puqcloud.com/link.php?id=77)**
+
+#####  [Order now](https://puqcloud.com/whmcs-module-hetznerdatacenter.php) | [Download](https://download.puqcloud.com/WHMCS/servers/PUQ_WHMCS-HetznerDatacenter/) | [FAQ](https://faq.puqcloud.com/)
+
+##### 1. Download the latest version of the module.<textarea readonly="readonly" spellcheck="false" style="position: absolute; bottom: -1em; padding: 0px; width: 1px; height: 1em; outline: currentcolor none medium;" tabindex="0" wrap="off"></textarea>
+
+PHP 8.X
+
+```
+wget http://download.puqcloud.com/WHMCS/servers/PUQ_WHMCS-HetznerDatacenter/PUQ_WHMCS-HetznerDatacenter-latest.zip
+```
+
+PHP 7.4
+
+```
+wget http://download.puqcloud.com/WHMCS/servers/PUQ_WHMCS-HetznerDatacenter/php74/PUQ_WHMCS-HetznerDatacenter-latest.zip
+```
+
+<p class="callout info">All versions are available via link: [http://download.puqcloud.com/WHMCS/servers/PUQ\_WHMCS-HetznerDatacenter/](http://download.puqcloud.com/WHMCS/servers/PUQ_WHMCS-HetznerDatacenter/)</p>
+
+##### 2. Unzip the archive with the module<textarea readonly="readonly" spellcheck="false" style="position: absolute; bottom: -1em; padding: 0px; width: 1px; height: 1em; outline: currentcolor none medium;" tabindex="0" wrap="off"></textarea>
+
+```
+unzip PUQ_WHMCS-HetznerDatacenter-latest.zip
+```
+
+##### 3. Copy "HetznerDatacenter" to "WHMCS\_WEB\_DIR/modules/servers/"
+
+##### 4. Create new server HetznerDatacenter in WHMCS (System Settings -&gt; Products/Services -&gt; Servers)<textarea readonly="readonly" spellcheck="false" style="position: absolute; bottom: -1em; padding: 0px; width: 1px; height: 1em; outline: currentcolor none medium;" tabindex="0" wrap="off"></textarea>
+
+```
+System Settings->Servers->Add New Server
+```
+
+- Enter the correct **Name** and **API** url `<em>api.hetzner.cloud</em>`
+
+[![image-1724850441575.png](https://doc.puq.info/uploads/images/gallery/2024-08/scaled-1680-/image-1724850441575.png)](https://doc.puq.info/uploads/images/gallery/2024-08/image-1724850441575.png)
+
+- In the **Server Details** section, select the "**PUQ Hetzner Datacenter**" module and enter the correct **api key** and for the **Hetzner API**. To get an API key, go to the **[Hetzner console](https://console.hetzner.cloud/) -&gt; Security -&gt; API tokens -&gt; Generate API token**
+- To check, click the **"Test connection"** button
+
+[![image-1724851230866.png](https://doc.puq.info/uploads/images/gallery/2024-08/scaled-1680-/image-1724851230866.png)](https://doc.puq.info/uploads/images/gallery/2024-08/image-1724851230866.png)
+
+##### 6. Create a new server Group
+
+<p class="callout info">For the module to work correctly, you need to create a group and add our server that we created to it. If you want to use several projects, you need to create your own server for each project and create a group and add one server to one group.</p>
+
+```
+System Settings->Products/Services->Create New Group
+```
+
+[![image-1724853090096.png](https://doc.puq.info/uploads/images/gallery/2024-08/scaled-1680-/image-1724853090096.png)](https://doc.puq.info/uploads/images/gallery/2024-08/image-1724853090096.png)
+
+##### 6. Create a new Products/Services
+
+```
+System Settings->Products/Services->Create a New Product
+```
+
+In the **Module settings** section, select the **"PUQ Hetzner Datacenter"** module
+
+<p class="callout warning">Please note that you need to select a group with a configured server, so we can separate services by projects in the Hetzner console</p>
+
+[![settingsHetznerDatacenter.png](https://doc.puq.info/uploads/images/gallery/2024-08/scaled-1680-/settingshetznerdatacenter.png)](https://doc.puq.info/uploads/images/gallery/2024-08/settingshetznerdatacenter.png)
+
+#### **Package Settings**
+
+**License key:** A pre-purchased license key for the "PUQ Hetzner Datacenter" module. For the module to work correctly, the key must be active.
+
+**Server name:** This option allows you to add a prefix string to the server name. A new name will be generated each time the create account function is called. When NameServer will only be present if the field is set: `NameServer-[*user_id*]-[*service_id*]`.
+
+**Server type:** The type of server to be deployed. This is selected from the available server types provided by Hetzner. This field is automatically populated based on your selection from Select Server and Location.
+
+**Server location:** The physical location of the server. This is selected from the available locations provided by Hetzner. This field is automatically populated based on your selection from Select Server and Location.
+
+**Server placement groups:** The placement groups for the server. This allows you to specify how the server should be grouped within the data center. This field is automatically populated based on your selection from the Select Placement Group.
+
+**Server image:** The operating system image to be used for the server. This is selected from the available images provided by Hetzner. This field is automatically populated based on the selection from Select Image.
+
+**SSH keys:** The SSH keys to be used for accessing the server. You can add multiple SSH keys. This field is automatically populated based on your selection from Select SSH Keys.
+
+**Server networks:** The networks to which the server will be connected. This field is automatically populated based on your selection from Private Networks.
+
+**Server firewalls:** The firewall rules to be applied to the server. You can select from predefined firewall rules or create custom ones. This field is automatically populated based on your selection from Select Firewalls.
+
+**User data:** Custom user data to use during server creation. This field is limited to 32KB. You can use this to provide cloud-init configuration scripts or other initialization data.
+
+**Package setting:** Additional settings for the package, including:
+
+- **Hide PTR open record:** Hide PTR open record. When the checkbox is checked, it hides the button.
+- **Not allow access to server on VNC/NC:** This setting prohibits access to the server console if enabled.
+- **Not allow access to Charts:** This setting prohibits access to the server charts if enabled.
+- **Not allow reset password:** This setting prohibits access to the server charts if enabled.
+- **Backup:** Allow access to server backup. The parameter allows access to server backups. You need to select the name of the custom field. (Default: Backup)
+- **Snapshot:** Allow access to server snapshot. The setting allows access to the server snapshot if enabled.
+- **Server labels:** Add labels to the server. The user\_id and service\_id fields with the corresponding values will be automatically added.
+- **Hide inputs on client area:** Hide inputs in client area. This setting hides the inputs (domain, password, username, nameserver1, and nameserver2) and sets up a server label(s) in the client area if enabled.
+- **Firewall for suspend service:** This setting allows you to select a firewall to be used for suspending the service or disable the VM.
+- **Link to instruction:** A link to the instruction will be reflected in the client area.
+
+#### **API Settings**
+
+**Select Server and Location:** Choose the server type and location from the available options provided by Hetzner.
+
+**Select Image:** Choose the operating system image for the server from the available options provided by Hetzner.
+
+**Custom option name for image:** Specify a custom option name for the server image if needed.
+
+**Allow user to select ISO image:** Enable this option to allow users to select an ISO image.
+
+**Allow user to reinstall service:** Enable this option to allow users to reinstall the service from the client area.
+
+**Allow user to choose backup and snapshot when reinstalling service:** Enable this option to allow users to choose a backup and snapshot when reinstalling the service.
+
+**Select Placement Group:** Choose the placement group for the server from the available options provided by Hetzner.
+
+**Select SSH Keys:** Choose the SSH keys to be used for accessing the server from the available options provided by Hetzner.
+
+**Public Networks:** Configure the public network settings for the server. This includes enabling or disabling public IPv4 and IPv6 addresses.
+
+**Private Networks:** Configure the private network settings for the server.
+
+**Select Firewalls:** Choose the firewall rules to be applied to the server from the available options provided by Hetzner.
+
+**Email configuration:** Setting up email templates. Selection of pre-prepared templates to inform the user about some actions:
+
+- **Custom Welcome Email:** Template for the welcome email.
+- **Custom start stop service Email:** Template for the start/stop service email.
+- **Custom reset server password Email:** Template for the reset server password email.
+- **Custom snapshot action Email:** Template for the snapshot action email.
+- **Custom backup action Email:** Template for the backup action email.
+- **Custom ISO action Email:** Template for the ISO action email.
+- **Custom reinstall action service Email:** Template for the reinstall action service email.
+
+**Metric Billing:** Configuration for metric billing, including:
+
+- **Floating IPv4 addresses:** Configure pricing for floating IPv4 addresses.
+- **Floating IPv6 addresses:** Configure pricing for floating IPv6 addresses.
+- **Bandwidth Usage (GB):** Configure pricing for bandwidth usage.
+- **Snapshot Usage (GB):** Configure pricing for snapshot usage.

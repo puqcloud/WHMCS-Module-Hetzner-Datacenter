@@ -1,0 +1,49 @@
+# Reinstall Section Description
+
+### Hetzner Datacenter module **[WHMCS](https://puqcloud.com/link.php?id=77)**
+
+#####  [Order now](https://puqcloud.com/whmcs-module-hetznerdatacenter.php) | [Download](https://download.puqcloud.com/WHMCS/servers/PUQ_WHMCS-HetznerDatacenter/) | [FAQ](https://faq.puqcloud.com/)
+
+The "Reinstall" section is a critical area where you can perform a complete reinstallation of your virtual machine. This section includes several important warnings and steps to ensure that users understand the consequences of reinstalling the server.
+
+#### Key Warnings:
+
+- **Reinstallation Warning:** The section begins with a strong warning in red text stating that reinstalling the virtual machine will completely remove all data on all disks of the virtual machine. This is emphasized to prevent accidental data loss.
+- **Awareness Notice:** There is a general reminder that you must be fully aware of what you are about to do before proceeding with the reinstallation.
+
+#### Steps to Reinstall:
+
+1. **Select Image:**
+    
+    
+    - **Image Type:** First, you need to select the type of operating system image you want to reinstall. This is done through a dropdown menu where you can select from available images.
+    - **Available Options:** There are options to show backups and snapshots by checking the corresponding boxes, allowing you to restore from a previous state if necessary.
+2. **Image Details:**
+    
+    
+    - Below the selection area, detailed information about the selected image is provided in a table format. The attributes include:
+        
+        
+        - **Id:** The unique identifier for the image.
+        - **Type:** The type of image (in this case, 'system').
+        - **Status:** The current availability status of the image.
+        - **Name:** The name of the selected image.
+        - **Description:** A brief description of the image.
+        - **Disk Size:** The size of the disk associated with the image.
+        - **Created:** The creation date and time of the image.
+        - **OS Flavor:** The flavor of the operating system (e.g., Debian).
+        - **OS Version:** The version of the operating system.
+        - **Rapid Deploy:** Indicates whether rapid deployment is enabled.
+        - **Protection:** Indicates whether delete protection is enabled.
+        - **Architecture:** The architecture of the image (e.g., x86).
+    - <p class="callout info">**Note:** The attributes listed here are dynamic and may vary depending on the selected image or the server configuration. Users should carefully review these details before proceeding.</p>
+3. **Confirmation:**
+    
+    
+    - **Protection Mechanism:** To protect against accidental reinstallation, the user is required to type the word "REINSTALL" in capital letters in a provided text box. This step is mandatory and acts as a final confirmation that the user intends to proceed with the reinstallation.
+4. **Execute Reinstallation:**
+    
+    
+    - Once the word is correctly entered, the green **Reinstall** button at the bottom can be clicked to initiate the reinstallation process. This action will completely wipe the server and install the selected operating system image.
+
+[![image-1725223947181.png](https://doc.puq.info/uploads/images/gallery/2024-09/scaled-1680-/image-1725223947181.png)](https://doc.puq.info/uploads/images/gallery/2024-09/image-1725223947181.png)

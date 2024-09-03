@@ -1,0 +1,47 @@
+# Basic concepts and requirements
+
+### Hetzner Datacenter module **[WHMCS](https://puqcloud.com/link.php?id=77)**
+
+#####  [Order now](https://puqcloud.com/whmcs-module-hetznerdatacenter.php) | [Download](https://download.puqcloud.com/WHMCS/servers/PUQ_WHMCS-HetznerDatacenter/) | [FAQ](https://faq.puqcloud.com/)
+
+#### **Requirements for the successful operation of the module**
+
+- Minimal WHMCS version 8+
+- Hetzner API
+
+### The logic of the module.
+
+##### You can offer your clients virtual machines from Hetzner. The module allows you to deploy almost any service based on Hetzner.
+
+##### Creating a new Account.
+
+1. Checking the module license
+2. Generating the server name in the format <small><small>**`NameServer-[*user_id*]-[*service_id*]`**</small></small>
+3. Generating data to create a server
+4. Sending data via API and creating a server
+
+##### Package change
+
+1. The package change function allows you to enable and disable backups
+
+##### Suspending an Account
+
+1. Checking the module license
+2. Selecting the suspension method: server shutdown or enabling firewall rules
+3. Executing the suspension via API
+
+##### Unsuspending an Account
+
+1. Checking the module license
+2. Selecting the restoration method: server power on or restoring firewall rules
+3. Executing the restoration via API
+
+##### Terminating an Account
+
+1. Checking the module license
+2. Deleting the server via API
+3. Updating information in the WHMCS database
+
+##### Client Area
+
+The module provides clients with the ability to manage virtual machines through the WHMCS client area, including functions for creating, suspending, restoring, and deleting servers, as well as managing backups and snapshots.

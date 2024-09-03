@@ -1,0 +1,43 @@
+# Email Template (puqHetznerDatacenter Custom ISO action service Email)
+
+### Hetzner Datacenter module **[WHMCS](https://puqcloud.com/link.php?id=77)**
+
+#####  [Order now](https://puqcloud.com/whmcs-module-hetznerdatacenter.php) | [Download](https://download.puqcloud.com/WHMCS/servers/PUQ_WHMCS-HetznerDatacenter/) | [FAQ](https://faq.puqcloud.com/)
+
+##### Create an email template for customer notifications.
+
+```
+System Settings->Email Templates->Create New Email Template
+```
+
+- **Email Type:** Product/service
+
+**Unique Name:** puqHetznerDatacenter Custom snaphot action service Email
+
+[![image-1725200967532.png](https://doc.puq.info/uploads/images/gallery/2024-09/scaled-1680-/image-1725200967532.png)](https://doc.puq.info/uploads/images/gallery/2024-09/image-1725200967532.png)
+
+ **Subject:**
+
+```
+{if $iso_action eq "mount"}ISO Mounted Successfully{/if}{if $iso_action eq "unmount"}ISO Unmounted Successfully{/if}
+```
+
+**Body:**
+
+```
+Dear {$client_name},
+
+{if $iso_action eq "mount"}Your ISO has been successfully mounted.{/if}{if $iso_action eq "unmount"}Your ISO has been successfully unmounted.{/if}
+
+{if $iso_id}ISO ID: {$iso_id}{/if}
+{if $iso_name}ISO Name: {$iso_name}{/if}
+{if $iso_description}ISO Description: {$iso_description}{/if}
+
+If you have any questions or need further assistance, do not hesitate to contact our support team.
+
+Thank you for choosing us.
+
+{$signature}
+```
+
+[![image-1725200998574.png](https://doc.puq.info/uploads/images/gallery/2024-09/scaled-1680-/image-1725200998574.png)](https://doc.puq.info/uploads/images/gallery/2024-09/image-1725200998574.png)

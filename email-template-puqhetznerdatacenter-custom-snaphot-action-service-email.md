@@ -1,0 +1,43 @@
+# Email Template (puqHetznerDatacenter Custom snaphot action service Email)
+
+### Hetzner Datacenter module **[WHMCS](https://puqcloud.com/link.php?id=77)**
+
+#####  [Order now](https://puqcloud.com/whmcs-module-hetznerdatacenter.php) | [Download](https://download.puqcloud.com/WHMCS/servers/PUQ_WHMCS-HetznerDatacenter/) | [FAQ](https://faq.puqcloud.com/)
+
+##### Create an email template for customer notifications.
+
+```
+System Settings->Email Templates->Create New Email Template
+```
+
+- **Email Type:** Product/service
+
+**Unique Name:** puqHetznerDatacenter Custom snaphot action service Email
+
+[![image-1725200462144.png](https://doc.puq.info/uploads/images/gallery/2024-09/scaled-1680-/image-1725200462144.png)](https://doc.puq.info/uploads/images/gallery/2024-09/image-1725200462144.png)
+
+ **Subject:**
+
+```
+{if $snapshot_action eq "create"}Snapshot started create Successfully{/if}{if $snapshot_action eq "remove"}Snapshot Removed Successfully{/if}{if $snapshot_action eq "rollback"}A restore from your snapshot has been initiated{/if}
+```
+
+**Body:**
+
+```
+Dear {$client_name},
+
+{if $snapshot_action eq "create"}Snapshot creation started.{/if}{if $snapshot_action eq "remove"}Your snapshot has been successfully removed.{/if}{if $snapshot_action eq "rollback"}A restore from your snapshot has been initiated.{/if}
+
+{if $snapshot_id}Snapshot ID: {$snapshot_id}{/if}
+{if $snapshot_description}Snapshot Description: {$snapshot_description}{/if}
+{if $service_product_name}Service name: {$service_product_name}{/if}
+
+If you have any questions or need further assistance, do not hesitate to contact our support team.
+
+Thank you for choosing us.
+
+{$signature}
+```
+
+[![image-1725200542055.png](https://doc.puq.info/uploads/images/gallery/2024-09/scaled-1680-/image-1725200542055.png)](https://doc.puq.info/uploads/images/gallery/2024-09/image-1725200542055.png)

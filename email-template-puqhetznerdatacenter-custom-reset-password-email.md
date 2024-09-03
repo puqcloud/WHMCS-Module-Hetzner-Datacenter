@@ -1,0 +1,39 @@
+# Email Template (puqHetznerDatacenter Custom reset password Email)
+
+### Hetzner Datacenter module **[WHMCS](https://puqcloud.com/link.php?id=77)**
+
+#####  [Order now](https://puqcloud.com/whmcs-module-hetznerdatacenter.php) | [Download](https://download.puqcloud.com/WHMCS/servers/PUQ_WHMCS-HetznerDatacenter/) | [FAQ](https://faq.puqcloud.com/)
+
+##### Create an email template for customer notifications.
+
+```
+System Settings->Email Templates->Create New Email Template
+```
+
+- **Email Type:** Product/service
+
+**Unique Name:** puqHetznerDatacenter Custom reset password Email
+
+[![image-1725018922546.png](https://doc.puq.info/uploads/images/gallery/2024-08/scaled-1680-/image-1725018922546.png)](https://doc.puq.info/uploads/images/gallery/2024-08/image-1725018922546.png)
+
+ **Subject:**
+
+```
+For user {$user} on Product/Service: {$service_product_name} password has been change
+```
+
+**Body:**
+
+```
+Dear {$client_name},
+
+You change password for user {$user} on Product/Service: {$service_product_name}. Below is the user logging data.
+
+User: {$user}
+New password: {$password}
+
+
+{$signature}
+```
+
+[![image-1725019070065.png](https://doc.puq.info/uploads/images/gallery/2024-08/scaled-1680-/image-1725019070065.png)](https://doc.puq.info/uploads/images/gallery/2024-08/image-1725019070065.png)

@@ -1,0 +1,45 @@
+# Email Template (puqHetznerDatacenter Custom reinstall action service Email)
+
+### Hetzner Datacenter module **[WHMCS](https://puqcloud.com/link.php?id=77)**
+
+#####  [Order now](https://puqcloud.com/whmcs-module-hetznerdatacenter.php) | [Download](https://download.puqcloud.com/WHMCS/servers/PUQ_WHMCS-HetznerDatacenter/) | [FAQ](https://faq.puqcloud.com/)
+
+##### Create an email template for customer notifications.
+
+```
+System Settings->Email Templates->Create New Email Template
+```
+
+- **Email Type:** Product/service
+
+**Unique Name:** puqHetznerDatacenter Custom reinstall action service Email
+
+[![image-1725201180316.png](https://doc.puq.info/uploads/images/gallery/2024-09/scaled-1680-/image-1725201180316.png)](https://doc.puq.info/uploads/images/gallery/2024-09/image-1725201180316.png)
+
+ **Subject:**
+
+```
+Server Rebuild Initiated Successfully
+```
+
+**Body:**
+
+```
+Dear {$client_name},
+
+We are pleased to inform you that the rebuild of your server has been successfully initiated. The server will be rebuilt using the following image:
+
+Image Name: {$image_name}
+Image Description: {$image_description}
+Disk Size: {$image_disk_size} GB
+Architecture: {$image_architecture}
+Image Type: {$image_type}
+
+Please be patient as the rebuild process completes. If you have any questions or need further assistance, do not hesitate to contact our support team.
+
+Thank you for choosing us.
+
+{$signature}
+```
+
+[![image-1725201209597.png](https://doc.puq.info/uploads/images/gallery/2024-09/scaled-1680-/image-1725201209597.png)](https://doc.puq.info/uploads/images/gallery/2024-09/image-1725201209597.png)
