@@ -5,7 +5,7 @@ The Hetzner WHMCS module enables seamless integration with Hetzner Cloud service
 
 ### Hetzner Datacenter module **[WHMCS](https://puqcloud.com/link.php?id=77)**
 
-#####  [Order now](https://puqcloud.com/whmcs-module-hetznerdatacenter.php) | [Download](https://download.puqcloud.com/WHMCS/servers/PUQ_WHMCS-HetznerDatacenter/) | [FAQ](https://faq.puqcloud.com/)
+#####  [Order now](https://puqcloud.com/whmcs-module-hetzner-datacenter.php) | [Download](https://download.puqcloud.com/WHMCS/servers/PUQ_WHMCS-HetznerDatacenter/) | [FAQ](https://faq.puqcloud.com/)
 
 ### The module, fully installed and correctly implemented in the system, offers the following functionalities.
 
